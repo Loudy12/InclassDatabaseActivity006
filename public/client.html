@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="painting-list">
+            <h2>Painting List</h2>
+            <div id="painting-list">
+                <!-- Cards will be dynamically populated here -->
+            </div>
+        </aside>
+        <main class="edit-section">
+            <h2>Edit Painting</h2>
+            <form id="edit-form">
+                <input type="hidden" id="painting-id"> <!-- Hidden field for Painting ID -->
+                <div>
+                    <label for="painting-title">Title</label>
+                    <input type="text" id="painting-title" name="title" required>
+                </div>
+                <div>
+                    <label for="painting-artist">Artist</label>
+                    <input type="text" id="painting-artist" name="artist" required>
+                </div>
+                <div>
+                    <label for="painting-year">Year</label>
+                    <input type="number" id="painting-year" name="year" required>
+                </div>
+                <div>
+                    <label for="painting-description">Description</label>
+                    <textarea id="painting-description" name="description" required></textarea>
+                </div>
+                <button type="submit">Save Changes</button>
+            </form>
+        </main>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
